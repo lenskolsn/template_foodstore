@@ -1,0 +1,206 @@
+:root {
+    --black: black;
+    --orange: orange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgba(255, 255, 255, 0.753);
+    color: white;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    .logo{
+        h2{
+            color: var(--black);
+        }
+    }
+    .nav_bar {
+        ul {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            li {
+                margin: 0 20px;
+                position: relative;
+                a {
+                    text-decoration: none;
+                    color: var(--black);
+                    font-weight: 500;
+                    transition: .3s;
+                    i{
+                        position: absolute;
+                        top: 10%;
+                        margin: 0px 5px;
+                    }
+                }
+            }
+            li:hover{
+                a,i{
+                    color: gray;
+                }
+            }
+            #buy_now {
+                a {
+                    color: white;
+                    background-color: var(--orange);
+                    padding: 15px 25px;
+                    border-radius: 25px;
+                    font-size: 16px;
+                }
+            }
+            #buy_now:hover > a{
+                background-color: rgb(255, 123, 0);
+            }
+        }
+    }
+}
+#heading{
+    background: linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.507)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    #title{
+        color: white;
+        text-align: end;
+        position: absolute;
+        right: 70px;
+        bottom: 70px;
+        h3{
+            color: var(--orange);
+        }
+        h1{
+            font-size: 80px;
+        }
+        a{
+            margin-top: 20px;
+            display: inline-block;
+            color: white;
+            background-color: var(--orange);
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover{
+            background-color: rgb(255, 123, 0);
+        }
+    }
+}
+#our_store{
+    background: #f2f2f2;
+    #content{
+        padding:  100px 0px;
+        .title{
+            h2{
+            color: var(--orange);
+            font-size: 50px;
+            font-weight: 400;
+            }
+        }
+        .card_{
+            span{
+                display: inline-block;
+                margin: 20px 0px;
+                font-size: 20px;
+            }
+            p{
+                font-size: 18px;
+                color: gray;
+            }
+            a{
+            color: var(--orange);
+            text-decoration: none;
+            font-size: 18px;
+            transition: .3s;
+            }
+            a:hover{
+            color: var(--black);
+                
+            }
+        }
+    }
+}
+#why_us{
+    #content{
+        padding: 70px;
+        .title{
+            text-align: center;
+            margin-bottom: 50px;
+            h2{
+            color: var(--orange);
+            font-size: 50px;
+            }
+        }
+        .card_{
+            text-align: center;
+            i{
+
+            }
+            h3{
+                margin: 30px 0px;
+            }
+            p{
+
+            }
+        }
+    }
+}
+#features{
+    padding: 50px 0px;
+    background-color: #f2f2f2;
+    #content{
+        .title{
+            text-align: center;
+            margin-bottom: 50px;
+            h2{
+            color: var(--orange);
+            font-size: 50px;
+            }
+        }
+        .card{
+            .card_title{
+                padding: 30px;
+                span{
+                    font-weight: 500;
+                }
+                h2{
+                    color: var(--orange);
+                }
+            }
+        }
+    }
+}
+#our_customers{
+    padding: 50px 0px;
+    #content{
+        .title{
+            text-align: center;
+            margin-bottom: 50px;
+            h2{
+            color: var(--orange);
+            font-size: 50px;
+            }
+        }
+    }
+}
+@media screen and(max-width: 991px) {
+    #header{
+        .nav_bar{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,186 @@
+:root {
+  --black: black;
+  --orange: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.753);
+  color: white;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+#header .logo h2 {
+  color: var(--black);
+}
+#header .nav_bar ul {
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+#header .nav_bar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+#header .nav_bar ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: 0.3s;
+}
+#header .nav_bar ul li a i {
+  position: absolute;
+  top: 10%;
+  margin: 0px 5px;
+}
+#header .nav_bar ul li:hover a, #header .nav_bar ul li:hover i {
+  color: gray;
+}
+#header .nav_bar ul #buy_now a {
+  color: white;
+  background-color: var(--orange);
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+#header .nav_bar ul #buy_now:hover > a {
+  background-color: #ff7b00;
+}
+
+#heading {
+  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+#heading #title {
+  color: white;
+  text-align: end;
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+}
+#heading #title h3 {
+  color: var(--orange);
+}
+#heading #title h1 {
+  font-size: 80px;
+}
+#heading #title a {
+  margin-top: 20px;
+  display: inline-block;
+  color: white;
+  background-color: var(--orange);
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+#heading #title a:hover {
+  background-color: #ff7b00;
+}
+
+#our_store {
+  background: #f2f2f2;
+}
+#our_store #content {
+  padding: 100px 0px;
+}
+#our_store #content .title h2 {
+  color: var(--orange);
+  font-size: 50px;
+  font-weight: 400;
+}
+#our_store #content .card_ span {
+  display: inline-block;
+  margin: 20px 0px;
+  font-size: 20px;
+}
+#our_store #content .card_ p {
+  font-size: 18px;
+  color: gray;
+}
+#our_store #content .card_ a {
+  color: var(--orange);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+#our_store #content .card_ a:hover {
+  color: var(--black);
+}
+
+#why_us #content {
+  padding: 70px;
+}
+#why_us #content .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#why_us #content .title h2 {
+  color: var(--orange);
+  font-size: 50px;
+}
+#why_us #content .card_ {
+  text-align: center;
+}
+#why_us #content .card_ h3 {
+  margin: 30px 0px;
+}
+#features {
+  padding: 50px 0px;
+  background-color: #f2f2f2;
+}
+#features #content .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#features #content .title h2 {
+  color: var(--orange);
+  font-size: 50px;
+}
+#features #content .card .card_title {
+  padding: 30px;
+}
+#features #content .card .card_title span {
+  font-weight: 500;
+}
+#features #content .card .card_title h2 {
+  color: var(--orange);
+}
+
+#our_customers {
+  padding: 50px 0px;
+}
+#our_customers #content .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#our_customers #content .title h2 {
+  color: var(--orange);
+  font-size: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  #header .nav_bar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
